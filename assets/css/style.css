@@ -1,0 +1,32 @@
+/* CSS Stylesheet*/
+body { background-color: skyblue;
+
+}
+#score { font-size: 20px;
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    text-align: center;
+}
+.crystal-image{ display: flex;
+    width: 200px;
+    height: 200px;
+   float: left;
+} 
+#target {background-color: yellow;
+        width: 150px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+p { clear: both;}
+#counter { font-size: 20px;
+width: 200px;
+height: 200px;
+background-color: lightsalmon;
+text-align: center;
+}
+#total { background-color:lightgreen;
+        width: 200px;}
+
