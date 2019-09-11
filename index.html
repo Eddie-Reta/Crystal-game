@@ -13,20 +13,24 @@
 <body>
     <h1>Crystal Collector!</h1>
     <p>
-        You will be given a random number as the start of the game.
+        <ul>
+        <li>You will be given a random number at the start of the game.</li>
         <br>
-        There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
-        score.
+        <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total
+        score.</li>
         <br>
-        You win the game by matching your total score to random number , you lose the game if your total score goes
-        above the random number.
+        <li>You win the game by matching your total score to the random number , you lose the game if your total score goes
+        above the random number.</li>
         <br>
-        The value of each crystal is hidden from you until you click on it.
+        <li>The value of each crystal is hidden from view so, click away to add up your points.</li> 
         <br>
-        Each time when the game starts, the game will change the value of the crystals.
+        <li>Each time when the game starts, the game will change the value of the crystals.</li>
+        <br />
+        <li>Hint: **Use the console.**</li>
+        </ul>
     </p>
     <div id="box">
-        <h2>Your winning number!!!</h2>
+        <h2>Your Winning Number!!!</h2>
         <div id="target">0</div>
     </div>
     <div id="score">
@@ -34,15 +38,15 @@
         <div id="Losses">Losses</div>
     </div>
     <div id="crystalImages">
-        <img id="ruby" src="assets/images/ruby.jpg">
-        <img id="sapphire" src="assets/images/sapphire.jpg">
-        <img id="emerald" src="assets/images/emerald.jpg">
-        <img id="diamond" src="assets/images/diamond.jpg">
+        <img id="ruby" class="crystal" src="assets/images/ruby.jpg">
+        <img id="sapphire" class="crystal" src="assets/images/sapphire.jpg">
+        <img id="emerald"class="crystal"  src="assets/images/emerald.jpg">
+        <img id="diamond" class="crystal" src="assets/images/diamond.jpg">
     </div>
     <p id="total">Your total score is:
     <div id="counter">0</div></p>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/js/game.js"></script>
     </script>
 </body>
 

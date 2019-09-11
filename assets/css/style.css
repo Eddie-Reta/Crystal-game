@@ -1,32 +1,92 @@
 /* CSS Stylesheet*/
-body { background-color: skyblue;
-
+body { display: flex;
+        flex-flow: column;
+        align-items: center;
+        color: whitesmoke;
+        margin: 0;
+}
+h1 {
+    background-color: grey;
+    border: solid 2px red;
+    border-radius: 15px;
+    padding: 1%;
+    margin: 1%;
+}
+#box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: grey;
+    border: solid 2px red;
+    border-radius: 15px;
+    padding: 0.5%;
+    color: rgb(69, 214, 69);
+    margin: 0;
 }
 #score { font-size: 20px;
     background-color: orange;
-    width: 150px;
-    height: 150px;
+    height: fit-content;
+    width: fit-content;
     margin: 10px;
     text-align: center;
+    color: blue;
+    padding: 1%;
+    border-radius: 15px;
 }
-.crystal-image{ display: flex;
+/* .crystal-image{ display: flex;
     width: 200px;
     height: 200px;
    float: left;
-} 
-#target {background-color: yellow;
-        width: 150px;
-    height: 60px;
-    text-align: center;
-    font-size: 30px;
+}  */
+.crystal {
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
 }
-p { clear: both;}
+.crystal:hover {
+    transform: scale(1.1, 1.1);
+}
+#target {background-color: yellow;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        font-size: 30px;
+        color: red;
+        padding: 2%;
+        border-radius: 15px;
+}
+p {
+    margin: 2px;
+}
+ul { 
+    background-color: grey;
+    border: solid 2px red;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 1.5%;
+    margin: 0;
+}
 #counter { font-size: 20px;
-width: 200px;
 height: 200px;
 background-color: lightsalmon;
 text-align: center;
+height: fit-content;
+color: purple;
+width: fit-content;
+padding: 1%;
+border-radius: 15px;
+margin: 0;
 }
 #total { background-color:lightgreen;
-        width: 200px;}
+        color: purple;
+        margin-top: 1%;
+        font-weight: bold;
+        padding: 1%;
+        border-radius: 15px;
+        width: fit-content;
+    }
 
