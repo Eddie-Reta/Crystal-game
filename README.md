@@ -19,9 +19,9 @@ Used HTML, CSS, and Javascript/JQUERY to complete this site.
 
 * The value of each crystal is hidden from view so, click away to add up your points.
 
-* Each time when the game starts, the game will change the value of the crystals.
+* Each time the game starts,  the value of the crystals will change.
 
-Yes I know same instructions from the sit but, it helps in case you fly by them their listed once again! 
+Yes I know same instructions from the site but, it helps in case you fly by them their listed once again! 
 
 Enjoy!!!
 ===========================================================
