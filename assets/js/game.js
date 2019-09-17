@@ -46,6 +46,9 @@ $(".crystal").on("click", function () {
     counter += crystalValue;
     $("#counter").text(counter);
     console.log(counter);
+
+    var winner = 3;
+
     if (counter === winningNumber) {
         wins++;
         $("#Wins").text("Wins" + " =" + " " + wins)
@@ -54,7 +57,11 @@ $(".crystal").on("click", function () {
         $("#counter").text(counter)
         number();
         randomCrystalPoints();
-
+        if(winner === wins) {
+            gameWon();
+            console.log("you won")
+        }
+       
     } else if (counter >= winningNumber) {
         alert("You lose!!");
         losses++;
@@ -64,9 +71,20 @@ $(".crystal").on("click", function () {
         number();
         randomCrystalPoints();
 
-    }
+    };
 
 });
+
+// lets user know they won if they have 3 wins
+function gameWon() {
+    $("#crystalImages").remove();
+    $("#counter").remove();
+    $("#score").remove();
+    $("#total").remove();
+    $("#box").empty();
+    $("#box").prepend("<h2 class='winner'>YOU WON!!!</h2>", "<img id='dance' src='./assets/images/carltonDance.gif' />");
+
+};
 
 number();
 randomCrystalPoints();
